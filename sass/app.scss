@@ -1,0 +1,23 @@
+@import "yoga";
+@import "normalize";
+
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+@import "font-awesome";
+@import "box-sizing";
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+
+.dropdown {
+  flex: 1;
+  cursor: pointer;
+  text-align: center;
+}
+
+.dropdown__content {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
