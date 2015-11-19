@@ -7,6 +7,12 @@ export default Backbone.Model.extend({
   },
 
   validate() {
-    return this.get('name') && this.get('phone');
+    if (!this.get('name')) {
+      return `Contacts need a name`;
+    }
+
+    if (!this.get('phone')) {
+      return `Contacts need a phone`;
+    }
   },
 });
